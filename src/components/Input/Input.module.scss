@@ -1,0 +1,10 @@
+@import "../../assets/styles/variables";
+
+.input {
+    height: 30px;
+    width: 100%;
+    padding: 0 4px;
+    border: 1px solid $gray-color;
+    font-family: Tahoma, sans-serif;
+    color: $text-color;
+}

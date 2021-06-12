@@ -1,0 +1,45 @@
+@import "../../assets/styles/variables";
+
+.title {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.content {
+    width: inherit;
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+}
+
+.path {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+
+    @media (max-width: 320px) {
+        flex-direction: column;
+    }
+}
+
+.accountsWrapper {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.notice {
+    text-align: center;
+    color: $notice-red;
+}
+
+.navLeft,
+.navRight {
+    margin: 0 30px;
+    cursor: pointer;
+
+    &:hover {
+        color: $main-color-lighter;
+        text-decoration: underline;
+    }
+}

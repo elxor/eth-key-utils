@@ -1,0 +1,25 @@
+@import "../../assets/styles/variables";
+
+.backHome {
+    margin: 10px 0;
+    padding: 5px 10px 5px 5px;
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    background-color: $main-color-lighter;
+
+    &:hover {
+        opacity: 0.85;
+    }
+}
+
+.line {
+    height: 1px;
+    background-color: $item-color-lighter;
+}
+
+.icon {
+    margin-right: 10px;
+    position: relative;
+    top: 1px;
+}

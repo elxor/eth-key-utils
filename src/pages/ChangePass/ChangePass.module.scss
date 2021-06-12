@@ -1,0 +1,29 @@
+@import "../../assets/styles/variables";
+
+.title {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.content {
+    display: grid;
+    gap: 30px;
+    justify-items: center;
+    width: inherit;
+}
+
+.inputPassword {
+    width: 260px;
+
+    @media (max-width: 320px) {
+        width: 100%;
+    }
+}
+
+.message {
+    color: $main-color-lighter;
+}
+
+.error {
+    color: $notice-red;
+}

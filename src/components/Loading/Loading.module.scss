@@ -1,0 +1,15 @@
+@import "../../assets/styles/variables";
+
+.loading {
+    width: 150px;
+    height: 34px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $gray-color;
+}
+
+.iconSpin {
+    font-size: 18px;
+}

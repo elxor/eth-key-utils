@@ -1,0 +1,33 @@
+@import "../../assets/styles/variables";
+
+.account {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 35px 1fr 100px;
+    border: 1px solid $gray-color;
+    margin: 10px 0;
+}
+
+.numberAccount,
+.download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.numberAccount {
+    border-right: 1px solid $gray-color;
+}
+
+.download {
+    border-left: 1px solid $gray-color;
+}
+
+.address,
+.privateKey {
+    padding: 5px;
+}
+
+.address {
+    border-bottom: 1px solid $gray-color;
+}

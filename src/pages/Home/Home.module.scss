@@ -1,0 +1,67 @@
+@import "../../assets/styles/variables";
+
+.content {
+    padding: 30px 0;
+    display: grid;
+    gap: 30px;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.35rem;
+    margin-bottom: -10px;
+}
+
+.noticeWrapper {
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+.notice {
+    color: $notice-red;
+}
+
+.outlink {
+    display: inline-block;
+    margin-top: 10px;
+    color: $main-color-lighter;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.item {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid $gray-color;
+    background-color: #fff;
+    text-align: center;
+
+    @media (max-width: 992px) {   
+        width: 70%;    
+    }
+    @media (max-width: 760px) {
+        width: 80%;
+    }
+    @media (max-width: 500px) {
+        width: 90%;
+    }
+    @media (max-width: 380px) {
+        width: 100%;
+    }
+}
+
+.link {
+    color: $main-color-lighter;
+    font-weight: 600;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.description {
+    margin-top: 10px;
+}

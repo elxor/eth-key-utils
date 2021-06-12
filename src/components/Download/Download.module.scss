@@ -1,0 +1,9 @@
+@import "../../assets/styles/variables";
+
+.downloadButton {
+    color: $main-color-lighter;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
