@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import classes from './CopyToClipboard.module.scss';
+
 
 const CopyToClipboard = ({textToCopy}) => {
 
     const [state, setState] = useState({
-        hoverText: 'Copy to clipboard',
         check: false
     });
+
+    const timeout = useRef(null);
 
     const clickHandler = () => {
         navigator.clipboard.writeText(textToCopy);
@@ -16,13 +18,17 @@ const CopyToClipboard = ({textToCopy}) => {
             check: true
         }));
 
-        setTimeout(() => {
+        timeout.current = setTimeout(() => {
             setState(state => ({
                 ...state,
                 check: false
             }));
-        }, 1500);
+        }, 1000);
     }
+
+    useEffect(() => {
+        return () => clearTimeout(timeout.current);
+    }, []);
 
     return (
         <div

@@ -71,7 +71,11 @@ const Extract = () => {
             result => {
                 setState(state => ({
                     ...state,
-                    loading: false
+                    loading: false,
+                    fileName: 'no file selected',
+                    fileContent: '',
+                    password: '',
+                    valid: {file: false, pass: false},
                 }));
 
                 setAccount(account => ({
